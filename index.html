@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.Css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Weather App</div>
+    
+        <div class="SearchBar ">
+            <input type="text" id="locationInput" placeholder="Search">
+            <div class="icon " id="searchButton"><i class="fa fa-search"></i></div>
+        </div>
+    </nav>
+    <div class="heading">
+        <h1>Weather In <span id="cityName">Loading...</span></h1>
+        <h3>The Weather is <span id="weatherDescription">Loading..</span></h3>
+    </div>
+    <div class="content">
+        <div class="box">
+            <h1>Temperature</h1>
+            <p>Current Temp: <span id="temperature">0&degF</span></p>
+            <p>Feels Like:<span id="feelsLike">0&degF</span></p>
+        </div>
+        <div class="box">
+            <h1>Humidity</h1>
+            <p>Current Humidity: <span id="humidity">0&percnt;</span></p>
+            <p>Visibility: <span id="visibility">0meter</span></p>
+            
+        </div>
+        <div class="box">
+            <h1>Wind</h1>
+            <p>Speed: <span id="windSpeed">0Km/h</span></p>
+            
+            <p>Pressure: <span id="pressure">0hpa</span></p>
+            
+        </div>
+    </div>
+   
+    <div class="add-tbl">
+        <h2>Add City Of Your Choice</h2>
+        <button class="addcitybtn" id="add-btn">+Add City</button>
+        <div class="form-container" id="formContainer">
+            <form id="cityForm">
+                <input type="text"  id="cityInput"  placeholder="Enter City" required>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <table id="weatherTable">
+<thead>
+    <tr>
+        <th>City</th>
+        <th>Temperature (°F)</th>
+        <th>Feels Like (°F)</th>
+        <th>Humidity (%)</th>
+        <th>Wind Speed (km/h)</th>
+        <th>Pressure (hPa)</th>
+        <th>Visibility (meters)</th>
+        <th>Weather Description</th>
+        <th>Actions</th>
+    </tr>
+</thead>
+<tbody>
+<!--Dynamic reallocation-->
+</tbody>
+    </table>
+
+   
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>
